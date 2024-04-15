@@ -1,0 +1,110 @@
+,class,section,day_times,room,instructor
+0,11168,06-LAB Regular,Mo 2:30PM - 5:30PM,STL 115,Ana I Medrano
+1,11170,08-LAB Regular,Mo 5:30PM - 8:30PM,STL 117,Ana I Medrano
+2,11171,09-LAB Regular,Mo 5:30PM - 8:30PM,STL 115,Ana I Medrano
+3,12284,23-LAB Regular,We 8:30AM - 11:30AM,STL 117,Ana I Medrano
+4,12285,24-LAB Regular,We 8:30AM - 11:30AM,STL 121,Ana I Medrano
+5,12313,29-LAB Regular,We 2:30PM - 5:30PM,STL 117,Ana I Medrano
+6,12314,30-LAB Regular,We 2:30PM - 5:30PM,STL 121,Ana I Medrano
+7,12317,32-LAB Regular,We 5:30PM - 8:30PM,STL 117,Ana I Medrano
+8,12462,33-LAB Regular,We 5:30PM - 8:30PM,STL 121,Ana I Medrano
+9,12464,35-LAB Regular,Th 8:30AM - 11:30AM,STL 117,Ana I Medrano
+10,12465,36-LAB Regular,Th 8:30AM - 11:30AM,STL 121,Ana I Medrano
+11,12496,43-LAB Regular,Th 5:30PM - 8:30PM,STL 115,Ana I Medrano
+12,14267,45-LAB Regular,Th 5:30PM - 8:30PM,STL 121,Ana I Medrano
+13,12964,47-LAB Regular,Fr 8:30AM - 11:30AM,STL 117,Ana I Medrano
+14,12965,48-LAB Regular,Fr 8:30AM - 11:30AM,STL 121,Ana I Medrano
+15,24602,01-LEC Regular,Tu 10:00AM - 11:00AM,SEC 206,Monique L Ogletree
+16,24603,02-LEC Regular,Fr 10:00AM - 11:00AM,SEC 205,Monique L Ogletree
+17,11188,01-LEC Regular,TuTh 2:30PM - 4:00PM,AAA AUD2,Lisa M Farmer
+18,11189,02-LEC Regular,MoWe 10:00AM - 11:30AM,AAA AUD1,Ann Oliver Cheek
+19,11191,04-LEC Regular,MoWe 2:30PM - 4:00PM,AAA AUD2,Jenifer Gifford
+20,12318,05-LEC Regular,TuTh 1:00PM - 2:30PM,AAA AUD2,Ana I Medrano
+21,13645,50-LEC Regular,MoWeFr 12:00PM - 1:00PM,TBA,Ann Oliver Cheek
+22,16246,51-LEC Regular,TuTh 10:00AM - 11:30AM,L 212S,Marc H Hanke
+23,16247,52-LEC Regular,TuTh 11:30AM - 1:00PM,L 212S,Marc H Hanke
+24,13899,54-LEC Regular,MoWe 1:00PM - 2:30PM,L 212S,Marc H Hanke
+25,11185,01-LEC Regular,TuTh 11:30AM - 1:00PM,SR 117,Abdalla Zanouny Ibrahim
+26,12243,02-LEC Regular,TuTh 1:00PM - 2:30PM,SR 117,Jenifer Gifford
+27,11156,04-LAB Regular,Mo 5:30PM - 8:30PM,STL 110,Tejendra Gill
+28,11160,08-LAB Regular,Tu 5:30PM - 8:30PM,STL 110,Tejendra Gill
+29,12070,13-LAB Regular,Th 8:30AM - 11:30AM,STL 110,Tejendra Gill
+30,12994,18-LAB Regular,Th 5:30PM - 8:30PM,STL 116,Tejendra Gill
+31,12995,19-LAB Regular,Th 5:30PM - 8:30PM,STL 110,Tejendra Gill
+32,13666,20-LAB Regular,Fr 8:30AM - 11:30AM,STL 110,Tejendra Gill
+33,15089,21-LAB Regular,Fr 8:30AM - 11:30AM,STL 116,Tejendra Gill
+34,15998,23-LAB Regular,Fr 11:30AM - 2:30PM,STL 110,Tejendra Gill
+35,15999,24-LAB Regular,Fr 2:30PM - 5:30PM,STL 110,Tejendra Gill
+36,12210,04-LAB Regular,TuTh 11:30AM - 1:00PM,STL 212,Richard D Knapp
+37,11186,01-LEC Regular,TuTh 10:00AM - 11:30AM,SEC 100,Chad M Wayne
+38,12354,01-LEC Regular,MoWe 1:00PM - 2:30PM,SEC 100,Monique L Ogletree
+39,11187,01-LEC Regular,TuTh 4:00PM - 5:30PM,AAA AUD2,Richard D Knapp
+40,12131,01-LEC Regular,TuTh 11:30AM - 1:00PM,SEC 100,Richard D Knapp
+41,24598,01-LEC Regular,MoWe 1:00PM - 2:30PM,F 162,Martin A Nunez
+42,24751,05-LEC Regular,MoWeFr 11:00AM - 12:00PM,SR 116,Lisa M Farmer
+43,11192,01-LEC Regular,TuTh 10:00AM - 11:30AM,AAA AUD1,"Ricardo Azevedo, Molly A Albecker"
+44,11680,02-LEC Regular,TuTh 4:00PM - 5:30PM,SEC 101,"Ricardo Azevedo, Molly A Albecker"
+45,17104,01-LEC Regular,Th 1:00PM - 2:00PM,GAR G202,Abdalla Zanouny Ibrahim
+46,17226,02-LEC Regular,Fr 11:00AM - 12:00PM,SEC 101,Abdalla Zanouny Ibrahim
+47,17228,04-LAB Regular,Mo 2:30PM - 5:30PM,STL 218,Abdalla Zanouny Ibrahim
+48,17229,05-LAB Regular,Mo 5:30PM - 8:30PM,STL 218,Abdalla Zanouny Ibrahim
+49,17230,06-LAB Regular,Tu 8:30AM - 11:30AM,STL 218,Abdalla Zanouny Ibrahim
+50,17234,09-LAB Regular,Tu 5:30PM - 8:30PM,STL 218,Abdalla Zanouny Ibrahim
+51,17235,10-LAB Regular,We 8:30AM - 11:30AM,STL 218,Abdalla Zanouny Ibrahim
+52,17237,12-LAB Regular,We 2:30PM - 5:30PM,STL 218,Abdalla Zanouny Ibrahim
+53,17238,13-LAB Regular,We 5:30PM - 8:30PM,STL 218,Abdalla Zanouny Ibrahim
+54,17239,14-LAB Regular,Th 8:30AM - 11:30AM,STL 218,Abdalla Zanouny Ibrahim
+55,11193,01-LEC Regular,TuTh 1:00PM - 2:30PM,SEC 101,Chad M Wayne
+56,24599,01-LEC Regular,MoWeFr 9:00AM - 10:00AM,MH 160,Steven C Pennings
+57,14017,01-LEC Regular,TuTh 10:00AM - 11:30AM,FH 101,Lisa M Farmer
+58,13098,01-LEC Regular,Mo 9:00AM - 10:00AM,GAR G201,Chad M Wayne
+59,13099,02-LEC Regular,We 9:00AM - 10:00AM,GAR G201,Chad M Wayne
+60,13137,02-LAB Regular,Tu 10:00AM - 1:00PM,STL 203,Jenifer Gifford
+61,11196,01-LEC Regular,MoWe 4:00PM - 5:30PM,GAR G201,Sanghyuk Chung
+62,14866,01-LEC Regular,TuTh 8:30AM - 10:00AM,SEC 104,Mehmet Sen
+63,18422,01-LEC Regular,MoWe 2:30PM - 4:00PM,S 115,Adam Stuckert
+64,12177,01-LEC Regular,TuTh 2:30PM - 4:00PM,SEC 203,Jacqueline N. Ekeoba
+65,12178,02-LAB Regular,TBA,TBA,Jacqueline N. Ekeoba
+66,17164,50-LEC Regular,TuTh 1:00PM - 2:30PM,L 212S,Marc H Hanke
+67,12368,01-LEC Regular,TuTh 2:30PM - 4:00PM,ARC 150,Tejendra Gill
+68,14818,01-LEC Regular,TuTh 10:00AM - 11:30AM,AH 110,Shaun Zhang
+69,24755,01-LEC Regular,TuTh 10:00AM - 11:30AM,CBB 106,Dan Graur
+70,12369,01-LEC Regular,MoWe 5:30PM - 7:00PM,SEC 101,Michael A Rea
+71,12790,02-LEC Regular,MoWe 10:00AM - 11:30AM,SEC 101,Michael A Rea
+72,11197,01-SEM Regular,We 4:00PM - 6:00PM,AH 108,To be Announced
+73,14418,01-LEC Regular,Tu 12:00PM - 1:00PM,FH 211,Amy Sater
+74,18205,01-LEC Regular,TuTh 2:30PM - 4:00PM,F 154,Kerri M Crawford
+75,15244,01-LEC Regular,TuTh 11:30AM - 1:00PM,D2 LECT2,Jokubas Ziburkus
+76,14798,02-LEC Regular,MoWe 2:30PM - 4:00PM,SEC 101,Jokubas Ziburkus
+77,14165,01-LEC Regular,MoWe 4:00PM - 5:30PM,GAR G201,Sanghyuk Chung
+78,14867,01-LEC Regular,TuTh 10:00AM - 11:30AM,SR2 129,Weiyi Peng
+79,19273,01-LEC Regular,MoWe 2:30PM - 4:00PM,S 115,Adam Stuckert
+80,24583,01-LEC Regular,MoWeFr 9:00AM - 10:00AM,MH 160,Steven C Pennings
+81,14952,01-PRA Regular,Fr 10:00AM - 11:30AM,CBB 122,"Jenifer Gifford, Chin-Yo Lin"
+82,14953,01-LEC Regular,MoWe 4:00PM - 5:30PM,SEC 201,Monique L Ogletree
+83,15253,01-LEC Regular,TuTh 2:30PM - 4:00PM,ARC 150,Tejendra Gill
+84,15973,01-LEC Regular,Th 4:00PM - 7:00PM,CBB 104,Peggy Lee Determeyer
+85,24584,01-LEC Regular,TuTh 10:00AM - 11:30AM,CBB 106,Dan Graur
+86,12371,01-LEC Regular,MoWe 5:30PM - 7:00PM,SEC 101,Michael A Rea
+87,13752,02-LEC Regular,MoWe 10:00AM - 11:30AM,SEC 101,Michael A Rea
+88,14819,01-LEC Regular,TuTh 1:00PM - 2:30PM,SEC 104,Arne Lekven
+89,14421,01-SEM Regular,Fr 11:00AM - 12:00PM,S 201,Arne Lekven
+90,16205,02-SEM Regular,We 5:00PM - 6:00PM,S 207,Weiyi Peng
+91,11201,01-SEM Regular,Th 11:30AM - 1:30PM,STL 219,To be Announced
+92,16624,02-DST Regular,TBA,TBA,Brigitte Dauwalder
+93,16630,03-DST Regular,TBA,TBA,Kerri M Crawford
+94,16932,04-DST Regular,TBA,TBA,Weiyi Peng
+95,17000,05-DST Regular,TBA,TBA,Seema Khurana
+96,18762,6-DST Regular,TBA,TBA,Qin Feng
+97,18763,7-DST Regular,TBA,TBA,Yu Liu
+98,18822,8-DST Regular,TBA,TBA,Arne Lekven
+99,11204,01-IND Regular,TBA,TBA,Weiyi Peng
+100,16814,06-IND Regular,TBA,TBA,Rebecca A Zufall
+101,16815,07-IND Regular,TBA,TBA,Erin S Kelleher
+102,16816,08-IND Regular,TBA,TBA,Dan Graur
+103,16817,09-IND Regular,TBA,TBA,Chin-Yo Lin
+104,19391,10-IND Regular,TBA,TBA,Debora Frigi Rodrigues
+105,16855,04-IND Regular,TBA,TBA,Qin Feng
+106,16857,06-IND Regular,TBA,TBA,Brigitte Dauwalder
+107,11690,01-DST Regular,TBA,TBA,Amy Sater
+108,16859,02-DST Regular,TBA,TBA,Masaya Fujita
