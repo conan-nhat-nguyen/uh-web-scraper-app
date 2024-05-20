@@ -8,6 +8,10 @@ from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import NoSuchElementException
 import os
 from bs4.formatter import HTMLFormatter
+import google.generativeai as genai
+import rmp
+
+genai.configure(api_key="AIzaSyD7isfX8OIe0PbRZgmq07bSvL-zwsiLWSU")
 
 def web_driver():
     options = webdriver.ChromeOptions()
@@ -20,34 +24,26 @@ def web_driver():
     driver = webdriver.Chrome(options=options)
     return driver
 
-def pretty_print(text):
-    print(text.prettify(formatter=formatter))
+def generate_comment(comments):
+    model = genai.GenerativeModel('gemini-pro')
 
-url = "https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL"
-driver3 = web_driver()
-driver3.get(url)  
-  
+    prompt = "Summerize these comments from students about a particular professor in a concise manner (less than 100 words):\n"
 
-def scrape_courses(url):
-    driver = web_driver()
-    driver.get(url)
+    for i, cmt in enumerate(comments):
+        prompt += "Student Comment " + str(i + 1) + ": "  + cmt + "\n"
 
-    try:
-        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "ACE_$ICField232$0")))
-        page_source = driver.page_source
-        soup = BeautifulSoup(page_source, 'html.parser')
-        course_table = soup.find('table', id='ACE_$ICField232$0')
-        if course_table:
-            pass
-        else:
-            print("Course table not found.")
-    finally:
-        pretty_print(soup)
-        driver.quit()
 
-cols = ["class", "section", "day_times", "room", "instructor"]
+    response = model.generate_content(prompt)
+
+    return response.text
+
 def search_classes(session = "", subject = "", match_type = "", match_id = "", career = ""):
+  cols = ["class", "section", "day_times", "room", "instructor"]
   # Input Fields
+  url = "https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL"
+  driver3 = web_driver()
+  driver3.get(url)  
+
   session_select = Select(driver3.find_element(By.NAME, "SSR_CLSRCH_WRK_SESSION_CODE$0"))
   subject_select = Select(driver3.find_element(By.NAME, "SSR_CLSRCH_WRK_SUBJECT_SRCH$1"))
   match_type_select = Select(driver3.find_element(By.NAME, "SSR_CLSRCH_WRK_SSR_EXACT_MATCH1$2"))
@@ -101,50 +97,18 @@ def search_classes(session = "", subject = "", match_type = "", match_id = "", c
       cur = get_innermost_child(cells[i])
       fields.append(cur.text.replace("\n", " "))
 
+
     course_obj = {}
     for i, col in enumerate(cols):
       course_obj[col] = fields[i]
 
+    rmpProfile = rmp.get_professor_by_name(course_obj["instructor"])
+    if rmpProfile != None:
+      print(rmpProfile.difficulty)
+
     results.append(course_obj)
 
-
-
   return results
-
-
-if __name__ == "__main__":
-
-  formatter = HTMLFormatter(indent=2)
-  WebDriverWait(driver3, 10).until(EC.presence_of_element_located((By.ID, "ACE_$ICField232$0")))
-  results = search_classes(session="1" ,subject="BIOL")
-
-
-  import pandas as pd
-  df = pd.DataFrame(results)
-
-  df.to_csv("courses.txt")
-  print(df)
-
-
-    
-
-
-# formatter = HTMLFormatter(indent=2)
-
-# URL for COSC courses
-# url = "https://saprd.my.uh.edu/psc/saprd/EMPLOYEE/HRMS/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL"
-
-# Call the function to scrape courses
-# scrape_courses(url)
-
-# driver3 = web_driver()
-
-# driver3.get(url)
-# WebDriverWait(driver3, 10).until(EC.presence_of_element_located((By.ID, "ACE_$ICField232$0")))
-
-#print(search_classes(session="1" ,subject="BIOL"))
-
-
 
  
       
