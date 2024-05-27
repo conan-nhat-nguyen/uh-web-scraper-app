@@ -66,7 +66,8 @@ npm run dev
 The app should be running now. Navigate to http://localhost:3000 to start using the app.
 
 You should see the application like this:
-/// PIC
+
+![sample form](https://github.com/conan-nhat-nguyen/uh-web-scraper-app/blob/main/images/form.png)
 
 There should be dropdown options for each field. Please select the option that fit your need. 
 
@@ -74,12 +75,40 @@ For MatchID, please put in the course number you need to search for. For example
 - Subject: ```COSC```
 - MatchID: ```1336```
   
-Examples of how to fill out the form:
-1) /// PIC 2
-/// Result
+### Examples of how to fill out the form:
+#### 1) Searching a class with only ```Session``` and ```Subject```
 
-2) /// PIC 3
-/// Result
+Example: Searching for ```Regular Academic Session``` for ```BTEC``` classes
 
-3) /// PIC 4
-/// RESULT
+![Searching for BTEC Classes](https://github.com/conan-nhat-nguyen/uh-web-scraper-app/blob/main/images/form1_searching_BTEC.png)
+
+And then you should get: 
+
+![Results for BTEC Classes](https://github.com/conan-nhat-nguyen/uh-web-scraper-app/blob/main/images/form1_result_BTEC.png)
+
+Note: If there is no matching professor from UH class database with Rate My Professor's database, the summary will display "No description available."
+
+
+#### 2) Searching for a class with other fields
+
+Example: Searching for 
+- Session: ```Regular Academic Session```
+- Subject: ```COSC```
+- Match Type: ```is exactly```
+- MatchID: ```1136```
+- Career: not selected
+
+Here are how you would choose in the form: 
+
+![Searching for COSC Classes](https://github.com/conan-nhat-nguyen/uh-web-scraper-app/blob/main/images/form2_searching_COSC1136.png)
+
+And you should get: 
+
+![Result for COSC Classes](https://github.com/conan-nhat-nguyen/uh-web-scraper-app/blob/main/images/form2_result_COSC1136.png)
+
+Note: If you put in a nonexistant class, you will get a network error.
+
+
+### And there you have it! You have successfully searched for a class at UH using our app along with the associated professor's AI-summarized Rate My Professor's rating comments.
+
+### Thank you for using our app! 
