@@ -6,7 +6,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import NoSuchElementException
 import os
-from bs4.formatter import HTMLFormatter
 import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 import rmp
