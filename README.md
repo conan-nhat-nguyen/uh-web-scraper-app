@@ -1,6 +1,8 @@
 # Project: University of Houston Web Scraper + AI-Powered Rate My Professor Reviews
 Version: v1.0
 
+Authors: [Conan Nguyen](https://github.com/conan-nhat-nguyen), [Hung Bui](https://github.com/hungqbui)
+
 Languages used: Python, TypeScript
 
 Libraries/Frameworks used:
