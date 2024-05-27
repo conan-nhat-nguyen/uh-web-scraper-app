@@ -40,11 +40,11 @@ This will automatically install the needed dependencies and libraries needed to 
 
 Run this command in your terminal to run the web scraper engine:
 ```
-python scraper.py
+python app.py
 ```
 Or run this command for some versions of python:
 ```
-python3 scraper.py
+python3 app.py
 ```
 
 ## Step 5: Run the interactive UI webpage (frontend)
@@ -54,7 +54,12 @@ Run these commands to start the Next.js application where you can start using th
 ```
 cd scraper-app
 ```
-2. Once you are in /scraper-app directory, run Next.js application in developmental mode:
+2. Once you are in /scraper-app directory, install dependencies for Next.js application:
+```
+pip install
+```
+
+Run Next.js application in developmental mode:
 ```
 npm run dev
 ```
