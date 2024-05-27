@@ -23,7 +23,7 @@ Use GitHub to clone the repository to your computer to use.
 If necessary, please refer to this guide to learn how to clone repository in GitHub: 
 https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 
-## Step 2: Create a virtual environment (optional)
+## Step 2: Create a virtual environment
 Creating a virtual environment will help to store packages needed for this project locally in your computer. However, this is completely optional but recommended. You can skip to Step 3 to continue.
 
 For the guide to create a virtual environment in Python, please refer to this: https://docs.python.org/3/library/venv.html
