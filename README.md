@@ -8,9 +8,9 @@ Authors: [Conan Nguyen](https://github.com/conan-nhat-nguyen), [Hung Bui](https:
 Languages used: Python, TypeScript
 
 Libraries/Frameworks used:
-  - Selenium (web scraping)
-  - Next.js (front-end)
-  - Google Generative AI (NLP Model)
+  - Selenium: web scraping
+  - Next.js: front-end
+  - Google Generative AI: NLP Model
   - Axios: HTTP Requests
 
 ## Introduction
