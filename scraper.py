@@ -60,7 +60,7 @@ def search_classes(session = "", subject = "", match_type = "", match_id = "", c
   submit_btn.click()
 
   # Wait until class list response
-  WebDriverWait(driver3, 15).until(EC.presence_of_element_located((By.ID, "win0divSSR_CLSRSLT_WRK_GROUPBOX1")))
+  WebDriverWait(driver3, 50).until(EC.presence_of_element_located((By.ID, "win0divSSR_CLSRSLT_WRK_GROUPBOX1")))
 
 
   # Get all table class rows
@@ -102,9 +102,13 @@ def search_classes(session = "", subject = "", match_type = "", match_id = "", c
     for i, col in enumerate(cols):
       course_obj[col] = fields[i]
 
-    rmpProfile = rmp.get_professor_by_name(course_obj["instructor"])
-    if rmpProfile != None:
-      print(rmpProfile.difficulty)
+    try: 
+      rmpProfile = rmp.get_professor_by_name(course_obj["instructor"])
+    except:
+      rmpProfile = None
+
+    if rmpProfile and rmpProfile.get("comment"):
+      print(rmpProfile.get("difficulty"))
 
     results.append(course_obj)
 
