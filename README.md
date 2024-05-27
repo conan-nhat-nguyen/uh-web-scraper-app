@@ -1,55 +1,51 @@
----
-Project: University of Houston Web Scraper + AI-Powered Rate My Professor Reviews
-intro: 'This app will help you to scrape info about classes you need at UH along with the 100-word summary of the professor teaching that class.'
-type: quick_start
-topics:
-  - <topic> # One or more from list of allowed topics: https://github.com/github/docs/blob/main/data/allowed-topics.js
-versions:
-  - <version>
----
+# Project: University of Houston Web Scraper + AI-Powered Rate My Professor Reviews
+Version: v1.0
 
-{% comment %}
-Follow the guidelines in https://docs.github.com/contributing/writing-for-github-docs/content-model#quickstart to write this article.
-For product version instructions, see https://github.com/github/docs/tree/main/content#versions.
-The entire quickstart should be about 600 words long or take about five minutes to read.
-Remove these comments from your article file when you're done writing
-{% endcomment %}
+Languages used: Python, TypeScript
+
+Libraries/Frameworks used:
+  - Selenium (web scraping)
+  - Next.js (front-end)
+  - Google Generative AI (NLP Model)
+  - Axios: HTTP Requests
 
 ## Introduction
 
-{% comment %}
-Build on the quick phrasing above by
-- Clarifying the audience
-- Clearly stating prerequisites and prior knowledge needed
-- Stating what the user will accomplish or build
-{% endcomment %}
+This application is recommended for all interested college students at University of Houston to find their classes' information and the associated professors' ratings in one go. 
 
-## Step one: Action the user will take
+Requirement: You need to have Python installed in your computer. For more information, please refer to the instructions in Python's website: https://www.python.org/ 
 
-{% comment %}
-In one sentence, describe what the user will do in this step
-Steps should break down the tasks the user will complete in sequential order
-Avoid replicating conceptual information that is covered elsewhere, provide inline links instead. Only include conceptual information unique to this use case.
-{% endcomment %}
+## Step 1: Clone this repository to your local computer
 
-### Task chunk
+Use GitHub to clone the repository to your computer to use.
+If necessary, please refer to this guide to learn how to clone repository in GitHub: 
+https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 
-{% comment %}
-A step may require the user to perform several tasks - break those tasks down into chunks, allowing the user to scan quickly to find their place if they navigated away from this screen to perform the task.
-An example might be creating a personal access token for the action to use and then storing it in secrets
-For UI based tasks, include the button or options the users should click
-If the task adds code, include the code in context (don't just show `needs setup` show the entire `setup` and `dependent` jobs)
-{% endcomment %}
+## Step 2: Create a virtual environment (optional)
+Creating a virtual environment will help to store packages needed for this project locally in your computer. However, this is completely optional but recommended. You can skip to Step 3 to continue.
 
-### Another task chunk
+For the guide to create a virtual environment in Python, please refer to this: https://docs.python.org/3/library/venv.html
 
-## Step 2: Do the next thing
+## Step 3: Install dependencies needed for the application
 
-{% comment %}
-Rinse and repeat, adding steps and tasks until the tutorial is complete
-{% endcomment %}
+Put this command in your terminal in your code editor:
+```
+pip install requirements.txt
+```
+This will automatically install the needed dependencies and libraries needed to run the project. Wait for all the installations to finish before proceeding to Step 4.
 
-## Next steps
+## Step 4: Run the web scraper engine (backend)
+
+Run this command in your terminal to run the web scraper engine:
+```
+python scraper.py
+```
+Or run this command for some versions of python:
+```
+python3 scraper.py
+```
+
+## Step 5: Run the  (backend)
 
 {% comment %}
 Provide a quick recap of what has been accomplished in the quick start as a means of transitioning to next steps. Include 2-3 actionable next steps that the user take after completing the quickstart. Always link to conceptual content on the feature or product. You can also link off to other related information on docs.github.com or in GitHub Skills.
