@@ -23,7 +23,7 @@ Use GitHub to clone the repository to your computer to use.
 If necessary, please refer to this guide to learn how to clone repository in GitHub: 
 https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 
-## Step 2: Create a virtual environment (optional)
+## Step 2: Create a virtual environment
 Creating a virtual environment will help to store packages needed for this project locally in your computer. However, this is completely optional but recommended. You can skip to Step 3 to continue.
 
 For the guide to create a virtual environment in Python, please refer to this: https://docs.python.org/3/library/venv.html
@@ -40,11 +40,11 @@ This will automatically install the needed dependencies and libraries needed to 
 
 Run this command in your terminal to run the web scraper engine:
 ```
-python scraper.py
+python app.py
 ```
 Or run this command for some versions of python:
 ```
-python3 scraper.py
+python3 app.py
 ```
 
 ## Step 5: Run the interactive UI webpage (frontend)
@@ -54,7 +54,12 @@ Run these commands to start the Next.js application where you can start using th
 ```
 cd scraper-app
 ```
-2. Once you are in /scraper-app directory, run Next.js application in developmental mode:
+2. Once you are in /scraper-app directory, install dependencies for Next.js application:
+```
+pip install
+```
+
+Run Next.js application in developmental mode:
 ```
 npm run dev
 ```
