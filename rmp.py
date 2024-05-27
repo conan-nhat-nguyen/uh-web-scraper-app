@@ -1,7 +1,6 @@
 import requests
 import re
 import base64
-from bs4 import BeautifulSoup
 import json
 
 def search_prof(prof_name):
