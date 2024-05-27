@@ -45,8 +45,34 @@ Or run this command for some versions of python:
 python3 scraper.py
 ```
 
-## Step 5: Run the  (backend)
+## Step 5: Run the interactive UI webpage (frontend)
+Run these commands to start the Next.js application where you can start using the application:
 
-{% comment %}
-Provide a quick recap of what has been accomplished in the quick start as a means of transitioning to next steps. Include 2-3 actionable next steps that the user take after completing the quickstart. Always link to conceptual content on the feature or product. You can also link off to other related information on docs.github.com or in GitHub Skills.
-{% endcomment %}
+1. Navigte to scraper-app folder (where all Next.js files are stored):
+```
+cd scraper-app
+```
+2. Once you are in /scraper-app directory, run Next.js application in developmental mode:
+```
+npm run dev
+```
+The app should be running now. Navigate to http://localhost:3000 to start using the app.
+
+You should see the application like this:
+/// PIC
+
+There should be dropdown options for each field. Please select the option that fit your need. 
+
+For MatchID, please put in the course number you need to search for. For example: **COSC 1336**
+- Subject: ```COSC```
+- MatchID: ```1336```
+  
+Examples of how to fill out the form:
+1) /// PIC 2
+/// Result
+
+2) /// PIC 3
+/// Result
+
+3) /// PIC 4
+/// RESULT
