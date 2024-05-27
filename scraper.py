@@ -9,6 +9,7 @@ from selenium.common.exceptions import NoSuchElementException
 import os
 from bs4.formatter import HTMLFormatter
 import google.generativeai as genai
+from google.generativeai.types import HarmCategory, HarmBlockThreshold
 import rmp
 
 genai.configure(api_key="AIzaSyD7isfX8OIe0PbRZgmq07bSvL-zwsiLWSU")
@@ -27,13 +28,18 @@ def web_driver():
 def generate_comment(comments):
     model = genai.GenerativeModel('gemini-pro')
 
-    prompt = "Summerize these comments from students about a particular professor in a concise manner (less than 100 words):\n"
+    prompt = "Summarize these comments from students about a particular professor in a concise manner (less than 100 words):\n"
 
     for i, cmt in enumerate(comments):
         prompt += "Student Comment " + str(i + 1) + ": "  + cmt + "\n"
 
 
-    response = model.generate_content(prompt)
+    response = model.generate_content(prompt, safety_settings={
+      HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
+      HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
+      HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
+      HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
+    })
 
     return response.text
 
@@ -60,7 +66,7 @@ def search_classes(session = "", subject = "", match_type = "", match_id = "", c
   submit_btn.click()
 
   # Wait until class list response
-  WebDriverWait(driver3, 50).until(EC.presence_of_element_located((By.ID, "win0divSSR_CLSRSLT_WRK_GROUPBOX1")))
+  WebDriverWait(driver3, 60).until(EC.presence_of_element_located((By.ID, "win0divSSR_CLSRSLT_WRK_GROUPBOX1")))
 
 
   # Get all table class rows
@@ -87,9 +93,12 @@ def search_classes(session = "", subject = "", match_type = "", match_id = "", c
 
   # Return all classes that were returned
   results = []
+  instructorMap = {}
   for j, row in enumerate(rows):
+
     cells = row.find_elements(By.TAG_NAME, "td")
     str_cur = ""
+
 
     fields = []
 
@@ -102,13 +111,28 @@ def search_classes(session = "", subject = "", match_type = "", match_id = "", c
     for i, col in enumerate(cols):
       course_obj[col] = fields[i]
 
-    try: 
-      rmpProfile = rmp.get_professor_by_name(course_obj["instructor"])
-    except:
-      rmpProfile = None
 
-    if rmpProfile and rmpProfile.get("comment"):
-      print(rmpProfile.get("difficulty"))
+
+    commentSummary = ""
+
+    if instructorMap.get(course_obj["instructor"]) is None:
+      rmpProfile = None
+      try:
+        rmpProfile = rmp.get_professor_by_name(course_obj["instructor"])
+      except:
+        print(course_obj["instructor"], "not found")
+
+      if rmpProfile:
+        commentSummary = generate_comment(rmpProfile["comments"])
+        instructorMap[course_obj["instructor"]] = commentSummary
+      else:
+        commentSummary = "No description available"
+        instructorMap[course_obj["instructor"]] = "No description available"
+      print(instructorMap)
+    else:
+      commentSummary = instructorMap[course_obj["instructor"]]
+
+    course_obj["instructorDesc"] = commentSummary
 
     results.append(course_obj)
 

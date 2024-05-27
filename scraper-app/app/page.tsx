@@ -1,21 +1,9 @@
-'use client'
+import CreateForm from "./CreateForm";
 
-import Image from "next/image";
-import React, { useEffect, useState } from "react"
-
-export default function Home() {
-
-  const [message, setMessage] = useState<string>("Loading");
-
-  useEffect(() => {
-    fetch("http://localhost:5000/")
-      .then((response) => response.json())
-      .then((data) : void => {
-        setMessage(data.message);
-      })
-  }, [])
-
-  return(
-    <div>{message}</div>
-  );
+export default function UserForm() {
+    return (
+       <main className="flex flex-col items-center">
+            <CreateForm />
+       </main>
+    )
 }
